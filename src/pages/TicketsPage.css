@@ -1,0 +1,18 @@
+.tickets-page {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    padding-top: 60px; /* Space for the menu bar */
+}
+
+.tickets-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tickets-container h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
