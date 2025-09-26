@@ -1,11 +1,20 @@
-const sign_in_btn = document.querySelector("#sign-in-btn");
-const sign_up_btn = document.querySelector("#sign-up-btn");
-const container = document.querySelector(".container");
+let selectedRole = 'user'; // Default role
 
-sign_up_btn.addEventListener('click', () =>{
-    container.classList.add("sign-up-mode");
+const userBtn = document.querySelector("#user-btn");
+const adminBtn = document.querySelector("#admin-btn");
+
+userBtn.addEventListener("click", () => {
+    selectedRole = "user";
+    userBtn.classList.add("active-role");
+    adminBtn.classList.remove("active-role");
+    console.log("User role selected");
 });
 
-sign_in_btn.addEventListener('click', () =>{
-    container.classList.remove("sign-up-mode");
+adminBtn.addEventListener("click", () => {
+    selectedRole = "admin";
+    adminBtn.classList.add("active-role");
+    userBtn.classList.remove("active-role");
+    console.log("Admin role selected");
 });
+/// form restrictions based on the password
+
