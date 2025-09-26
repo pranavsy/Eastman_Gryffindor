@@ -9,6 +9,8 @@
     transition: transform 0.3s ease-in-out; 
     z-index: 1000; 
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
 }
 
 .right-menu.open {
@@ -19,19 +21,20 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
     height: 60px;
-    background-color: #1a1a1a;
+    background-color: #5995fd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
 }
 
 .left-menu {
     display: flex;
-    gap: 20px;
+    gap: 2rem;
 }
 
 .left-menu a {
@@ -49,4 +52,26 @@
 
 .left-menu a.active {
     background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menubar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+
+.menubar a:hover {
+    opacity: 0.8;
+}
+
+.menubar .MuiButton-outlined {
+    color: white;
+    border-color: white;
+}
+
+.menubar .MuiButton-outlined:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: white;
 }
